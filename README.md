@@ -11,3 +11,4 @@ Tested using pokeapi to get Pokémon data from [pokeapi.co](pokeapi.co). Receive
 
 ### 11/14/21
 ToDoList Using Checkboxes
+changed default js eval function to expr-eval evaluate function
