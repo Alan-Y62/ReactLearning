@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 //import logo from '../images/trash_tase_logo.png'
 import './calc.css'
 import Navbar from './Navbar'
+const Parser = require('expr-eval').Parser;
+const parser = new Parser();
 
 class Calculator extends Component {
 
@@ -58,7 +60,9 @@ class Calculator extends Component {
                 document.getElementById('input').textContent += "*"
                 break;
             default:
-                document.getElementById('output').textContent = eval(document.getElementById('input').textContent)
+                let expression = document.getElementById('input').textContent;
+                let solved = parser.parse(expression).evaluate();
+                document.getElementById('output').textContent = solved;
                 break;
         }
     }
