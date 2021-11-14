@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    background: gray;
+    height: 50px;
+}
+
+body { padding-top: 60px; }
+
+.body-part {
+    padding: 2px;
+}
+
+.img-con {
+    width: 50%;
+    padding-bottom: 50%;
+}

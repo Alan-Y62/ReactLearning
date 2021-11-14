@@ -1,0 +1,11 @@
+.body-part {
+    position: relative;
+    top: 56px;
+}
+
+table, th, td {
+    border:1px solid black;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+}
